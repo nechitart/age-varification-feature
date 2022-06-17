@@ -1,0 +1,21 @@
+{
+  "name": "lachestry/m2-base",
+  "description": "N/A",
+  "require": {
+    "php": "~7.0.0|~7.1.0|~7.2.0"
+  },
+  "type": "magento2-module",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Lachestry\\Base\\": ""
+    }
+  },
+  "version": "1.0.7"
+}

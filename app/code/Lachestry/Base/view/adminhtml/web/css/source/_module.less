@@ -1,0 +1,91 @@
+@import '_icons.less';
+
+.config-nav-block.lachestry-logo strong:before {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: bottom;
+
+  content: '\e900';
+  font-family: @icons-lachestry__font-name;
+  font-size: @icons-lachestry-config__font-size;
+}
+
+.config-nav-block.green strong:before {
+    color: #19a96a;
+}
+
+#menu-lachestry-base-menu {
+  .submenu .level-0 > a {
+    display: block;
+    width: 99%;
+    min-height: 0;
+    margin: .7rem 0;
+    padding: 1.25rem 1rem 1.25rem 2rem;
+
+    color: #a79d95;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: left;
+    text-transform: none;
+
+    &:before {
+      content: '';
+      display: none;
+    }
+
+    &:hover {
+      background-color: #524d49;
+    }
+  }
+
+  .level-0:first-child > a:after {
+    content: '';
+    display: none;
+  }
+
+  & > a:before {
+    content: '\e900';
+    font-family: @icons-lachestry__font-name;
+    font-size: @icons-lachestry__font-size;
+  }
+
+  .item-container._show .submenu {
+    opacity: 1;
+  }
+
+  .item-container .submenu {
+    transform: none;
+    opacity: 0;
+    transition-property: opacity;
+  }
+  .submenu .parent {
+    margin-bottom: 0.5rem;
+  }
+  .submenu .column .parent {
+    margin-bottom: 0;
+  }
+
+  .item-marketplace {
+    border-top: 1px solid @color-gray65-almost;
+
+    a:before {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      margin-right: 5px;
+      vertical-align: bottom;
+
+      content: '\e902';
+      font-family: @icons-lachestry__font-name;
+      font-size: @icons-lachestry__font-size;
+    }
+  }
+}
+
+#menu-lachestry-base-menu > a:hover:before,
+#menu-lachestry-base-menu._show > a:before {
+  content: '\e901';
+  font-family: @icons-lachestry__font-name;
+  font-size: @icons-lachestry__font-size;
+}
+

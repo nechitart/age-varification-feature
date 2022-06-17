@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Lachestry Team
+ * @copyright Copyright (c) 2019 Lachestry (https://lachestry.com)
+ * @package Lachestry_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <lachestry>
+            <base>
+                <marketplace_url><![CDATA[https://marketplace.magento.com/partner/lachestry]]></marketplace_url>
+            </base>
+        </lachestry>
+    </default>
+</config>

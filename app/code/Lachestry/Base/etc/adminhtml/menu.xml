@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Lachestry Team
+ * @copyright Copyright (c) 2019 Lachestry (https://lachestry.com)
+ * @package Lachestry_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lachestry_Base::menu"
+             title="Lachestry"
+             module="Lachestry_Base"
+             translate="title"
+             sortOrder="75"
+             resource="Lachestry_Base::menu"/>
+        <add id="Lachestry_Base::marketplace"
+             title="Lachestry Marketplace"
+             module="Lachestry_Base"
+             translate="title"
+             sortOrder="1000"
+             parent="Lachestry_Base::menu"
+             resource="Lachestry_Base::marketplace"/>
+    </menu>
+</config>

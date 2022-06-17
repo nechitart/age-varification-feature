@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Lachestry Team
+ * @copyright Copyright (c) 2019 Lachestry (https://lachestry.com)
+ * @package Lachestry_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Backend\Model\Menu\Item">
+        <plugin name="Lachestry_Base:menu-market-url" type="Lachestry\Base\Plugin\Backend\Model\Menu\Item"/>
+    </type>
+</config>

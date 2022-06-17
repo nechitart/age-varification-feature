@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Lachestry Team
+ * @copyright Copyright (c) 2019 Lachestry (https://lachestry.com)
+ * @package Lachestry_Base
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Lachestry_Base::menu" title="Lachestry Extensions" translate="title" sortOrder="79">
+                    <resource id="Lachestry_Base::marketplace" title="Lachestry Marketplace" translate="title" sortOrder="1"/>
+                </resource>
+
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Lachestry_Base::config" title="Lachestry Extensions" sortOrder="1000" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
